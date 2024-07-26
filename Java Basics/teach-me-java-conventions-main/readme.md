@@ -30,24 +30,24 @@
 ## Calculate power class
 
 1. Added elementary comment in method
-2. _**powerfinder**_ class name change to _**PowerFinder**_
-2. _**0F**_ method name change to _**calculatePower**_
-3. Parameter 1 **_xyz_** change to base
-4. Parameter 1 _**pqr**_ change to _**exponent**_
-5. Variable name _**p**_ change to _**result**_
+2. _**powerfinder**_ class name changed to _**PowerFinder**_
+2. _**0F**_ method name changed to _**calculatePower**_
+3. Parameter 1 **_xyz_** changed to base
+4. Parameter 1 _**pqr**_ changed to _**exponent**_
+5. Variable name _**p**_ changed to _**result**_
 
 ## Test class
 
-1. Changes class name _**powertest**_ to _**PowerFinderTest**_
-2. Changes method name _**one_raised_to_one_is_onew**_ to _**testOneRaisedToOneIsOne**_
-3. Changes method name _**twoRaised_to_one_is_2**_ to _**testTwoRaisedToOneIsTwo**_
-4. Changes method name _**two_power_2_is_4**_ to _**testTwoPowerTwoIsFour**_
-5. Changes method name _**power_of_2_and_3_Is_SIX**_ to _**testThreePowerTwoIsNine**_
+1. Changed class name _**powertest**_ to _**PowerFinderTest**_
+2. Changed method name _**one_raised_to_one_is_onew**_ to _**testOneRaisedToOneIsOne**_
+3. Changed method name _**twoRaised_to_one_is_2**_ to _**testTwoRaisedToOneIsTwo**_
+4. Changed method name _**two_power_2_is_4**_ to _**testTwoPowerTwoIsFour**_
+5. Changed method name _**power_of_2_and_3_Is_SIX**_ to _**testThreePowerTwoIsNine**_
 6. Added failed message in assertEquals.
 
 ## build.gradle
 
-Update gradle file 
+Updated gradle file 
 
 ### Old build.gradle
 ```groovy
@@ -81,19 +81,11 @@ repositories {
 }
 
 dependencies {
-    // Dependency for the main application
-    implementation 'org.jetbrains:annotations:23.0.0'
-
-    // Dependency for unit testing with JUnit 4
-    testImplementation 'junit:junit:4.12'
-
-    // Uncomment below for JUnit 5
-    // testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    // testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }
 
 test {
-    // Required for JUnit 5
     useJUnitPlatform()
 }
 ```
